@@ -1,0 +1,19 @@
+def get_employee_info(**kwargs):
+  cict={}
+  cict["name"]=kwargs.get("name")
+  cict["salary"]= kwargs.get("salary")
+  cict["department"]= kwargs.get("department")
+  return cict
+  
+
+
+result = get_employee_info(
+    name="Yash",
+    salary=90000,
+    department="Robotics",
+    age=21,
+    city="Delhi"
+)
+print(result)
+
+  
