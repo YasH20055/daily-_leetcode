@@ -1,0 +1,20 @@
+def increase_values(limit, percentage, **kwargs):
+    result = {}
+    
+
+    for key, value in kwargs.items():
+        if value > limit:
+          result[key]=value+value*percentage/100
+          
+      
+            # your code here
+
+    return result
+result = increase_values(
+    50000,
+    20,
+    salary=90000,
+    bonus=20000,
+    savings=70000
+)
+print(result)
