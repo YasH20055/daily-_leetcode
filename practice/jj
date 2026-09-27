@@ -1,0 +1,19 @@
+def increase_high_salaries(**kwargs):
+    result = {}
+    
+
+    for key, value in kwargs.items():
+        if value > 50000:
+          result[key]=value+value*10/100
+          
+      
+            # your code here
+
+    return result
+result = increase_high_salaries(
+    salary=90000,
+    bonus=20000,
+    savings=70000
+)
+
+print(result)
