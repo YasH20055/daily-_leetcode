@@ -1,0 +1,8 @@
+employee = {
+    "name": "Yash",
+    "age": 21
+}
+def show_info(name, age):
+    print(name)
+    print(age)
+show_info(**employee)
